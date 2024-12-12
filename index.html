@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Welcome to Kunal's Professional Portfolio</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #007bff;
+      position: relative;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://media.istockphoto.com/id/1345778718/photo/cloud-computing-the-data-transfer-and-storage-concept-consists-of-a-white-polygonal.webp?b=1&s=170667a&w=0&k=20&c=GnhRL-ni1TLWITFWdYUAygacWEiSOK8nS_uo8pKw9rY='); 
+      background-size: cover;
+      opacity: 0.1;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: #007bff;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .cloud-image {
+      width: 200px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      background-color: #6dd5ed;
+      border-radius: 50%;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .center-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      background-image: linear-gradient(to right, #ff4b5c, #ffc107);
+      border-radius: 50%;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Lobster', cursive;
+      color: #007bff;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: #ff4b5c;
+    }
+
+    .vibrant-box {
+      background-color: #007bff;
+      color: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1s;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .reviews {
+      margin-top: 2rem;
+      background-color: #f9f9f9;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow-y: scroll;
+      max-height: 400px;
+    }
+
+    .review-card {
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      background-color: #fff;
+    }
+
+    .review-card .rating {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .rating span {
+      color: #ffd700;
+      font-size: 1.2rem;
+      margin-right: 3px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Kunal's Professional Portfolio</h1>
+    <p>Cloud Enthusiast | DevOps Engineer | Freelancer</p>
+    <div class="social-links">
+      <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/kunal-jadhav-094440318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_apps" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/itz-jadhav/terraform-using-automated-s3bucket.git" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </header>
+
+  <main>
+    <div class="center-image">
+      <img class="cloud-image" src="https://myterraformprojectwebsite2023.s3.amazonaws.com/profile.png" alt="Profile Image">
+    </div>
+
+    <h2>About Me</h2>
+    <p>Hey there, I'm Kunal, a remote DevOps engineer, freelancer, and content creator passionate about cloud computing and DevOps.</p>
+    <p>As a freelancer, I've helped clients design and implement cloud solutions with tools like Kubernetes, Docker, ArgoCD, GitLab, Jenkins, Prometheus, and Grafana. I've earned over $20,000 doing so.</p>
+    <p>Alongside my work, I create educational content to help others learn about cloud technologies and DevOps best practices.</p>
+
+    <h2 class="testimonials">Reviews</h2>
+    <div class="reviews">
+      <div class="review-card">
+        <div class="rating">
+          <span>⭐⭐⭐⭐⭐</span>
+        </div>
+        <p>"Kunal's expertise in cloud computing and DevOps is unmatched. His solutions have transformed our infrastructure!"</p>
+        <p>- John Doe, CEO at Example Corp</p>
+      </div>
+      <div class="review-card">
+        <div class="rating">
+          <span>⭐⭐⭐⭐⭐</span>
+        </div>
+        <p>"Working with Kunal has been a great experience. He helped us implement an efficient DevOps pipeline."</p>
+        <p>- Jane Smith, CTO at ABC Solutions</p>
+      </div>
+    </div>
+
+    <div class="vibrant-box">
+      <h2>Contact Me</h2>
+      <p>If you have any questions or collaboration opportunities, feel free to reach out to me:</p>
+      <ul>
+        <li>Email: <a href="mailto:kunaljadhav361@gmail.com">kunaljadhav361@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/kunal-jadhav-094440318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_apps" target="_blank">Kunal Jadhav's LinkedIn Profile</a></li>
+        <li>GitHub: <a href="https://github.com/itz-jadhav/terraform-using-automated-s3bucket.git" target="_blank">Kunal's GitHub Profile</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Kunal's Portfolio | All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
